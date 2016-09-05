@@ -1,0 +1,12 @@
+int b1; 
+int b2; 
+int h; 
+int A; 
+int Aproc; 
+int area(int b1proc, int b2proc){ 
+	Aproc = (b1proc * b2proc) 
+	return Aproc; 
+}; 
+b1=1; 
+b2=5; 
+A = func area(b1, b2);

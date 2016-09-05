@@ -1,0 +1,13 @@
+Prog = Decls ";" Comandos.
+Decls = Decl {";" Decl}.
+Decl = (("int")|("bool")) Ident (["[" Num "]"] | "(" Args ")" "{" Comandos ";" "return" Ident "}").
+Args = "void" | (("int")|("bool")) Ident {"," (("int")|("bool")) Ident}.
+Comandos = Comando ";" {Comando ";"}.
+Comando = (Atrib | Cond | Iter).
+Atrib = Ident ["[" (Num|Ident) "]"] "=" (ExpAr | ExpBool | "func" Ident "(" [Ident {"," Ident}] ")").
+ExpAr = (["-"] Num | Ident ["[" (Num|Ident) "]"] | "(" ExpAr ")"){("+"|"-"|"*"|"/") (["-"] Num | Ident ["[" (Num|Ident) "]"] | "(" ExpAr ")")}.
+Cond = "if" "(" ExpBool ")" "{" Comandos "}" ["else" "{" Comandos "}"].
+Iter = "while" "(" ExpBool ")" "{" Comandos "}".
+ExpBool = (ExpAr (">" | "<" | "==") ExpAr) | "FALSE" | "TRUE".
+Ident = Letra {Letra | Digito}.
+Num = ["-"] Digito {Digito}.

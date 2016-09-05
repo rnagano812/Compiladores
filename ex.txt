@@ -1,0 +1,9 @@
+bool even;
+int number;
+number = 1234;
+if ((9543/2)==0){
+even = TRUE;
+};
+else{
+even = FALSE;
+};

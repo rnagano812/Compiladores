@@ -1,0 +1,2 @@
+Program = BStatement { BStatement } int "END" .
+BStatement = int ( Assign | Read | Data | Print | Goto | If | For | Next | Dim | Def | Gosub | Return | Remark ) .  

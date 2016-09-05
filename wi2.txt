@@ -1,0 +1,7 @@
+Predef = "SIN" | "COS" | "TAN" | "ATN" | "EXP" | "ABS" | "LOG" | "SQR" | "INT" | "RND" .
+Read = "READ" Var { "," Var } .
+Data = "DATA" Snum { "," Snum } .
+Print = "PRINT" [ Pitem { "," Pitem } [ "," ] ].
+Pitem = Exp | 
+Goto = ( "GOTO" | "GO" "TO" ) int .
+If = "IF" Exp ( ">=" | ">" | "<>" | "<" | "<=" | "=" ) Exp "THEN" int .

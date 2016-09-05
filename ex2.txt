@@ -1,0 +1,16 @@
+int vetor[5];
+int soma;
+int i;
+vetor[0] = 3;
+vetor[1] = 10;
+vetor[2] = 8;
+vetor[3] = 1;
+vetor[4] = 25;
+soma = 0;
+i = 0;
+while (i < 6){
+if (vetor[i] > 5) {
+	soma = soma + vetor[i];
+};
+i = i + 1;
+};
