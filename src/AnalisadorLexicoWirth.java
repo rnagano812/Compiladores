@@ -20,11 +20,10 @@ public class AnalisadorLexicoWirth {
 	 * 
 	 * @param entrada String de entrada
 	 */
-	public AnalisadorLexicoWirth (int modo,LinkedList<event> cadeia2){
+	public AnalisadorLexicoWirth (LinkedList<event> cadeia2){
 		String [] nulo = new String [1] ;
 		nulo[0] = null;
 		automato = new TabelaPilha (ESTADOS.length, ALFABETO.length, ESTADOS, ALFABETO, "AnalisadorLexico", nulo);
-		this.modo = modo;
 		this.est_atual = automato.getNomePrimeiro();
 		///
 		entrada2 = cadeia2;

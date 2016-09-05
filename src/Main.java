@@ -30,7 +30,7 @@ public class Main {
 		    
 		    
 		    //Analisador lexico deve receber a lista dos caracteres
-		    AnalisadorLexicoWirth analisador = new AnalisadorLexicoWirth(0,ASCII);
+		    AnalisadorLexicoWirth analisador = new AnalisadorLexicoWirth(ASCII);
 			analisador.inicializaWirth();
 			
 			ReconhecedorWirth wirth = new ReconhecedorWirth(analisador);
